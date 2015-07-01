@@ -7,7 +7,7 @@ angular.module('worldClockApp')
         'sy': {name: 'Sydney', diff: 15}
     };
     
-    var refTime = moment();
+    var refTime;
     
     var factory = {};
     
@@ -16,7 +16,12 @@ angular.module('worldClockApp')
     };
     
     factory.getTime = function(code) {
-        return moment().add(locations[code].diff, "hours");
+        if (refTime) {
+            return moment(refTime).add(locations[code].diff, "hours");
+        } else {
+            return moment().add(locations[code].diff, "hours");    
+        }
+
     };
     
     factory.setDiff = function(code, diff) {
@@ -28,7 +33,7 @@ angular.module('worldClockApp')
     }
     
     factory.setRefTime = function(time) {
-        refTime = moment(time);
+        refTime = moment(time, "HH:mm:ss");
     }
     
     return factory;
