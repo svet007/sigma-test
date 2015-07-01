@@ -1,0 +1,38 @@
+#wrapper {
+    width: 992px;
+    margin: 0 auto;
+    padding: 30px 100px;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+.dir-set-diff,
+.dir-view-time {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dir-set-time h3,
+.dir-view-time h3,
+.dir-set-diff h3 {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.dir-view-time h4 {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.view-time-main .dir-view-time h3 {
+    font-size: 16px;
+}
+
+.view-time-main .dir-view-time h4 {
+    font-size: 40px;
+    margin-left: 30px;
+}

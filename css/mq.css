@@ -1,0 +1,37 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #wrapper {
+        width: auto;
+        text-align: center;
+    }
+    .view-time-main .dir-view-time,
+    .dir-set-diff {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #wrapper {
+        width: 200px;
+        text-align: right;
+        padding: 0;
+    }
+    .dir-set-time input,
+    .dir-set-time button,
+    .dir-set-diff input,
+    .dir-set-diff button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .dir-view-time {
+        margin: 0;
+    }
+    h2 {
+        text-align: left;
+    }
+    
+    .dir-view-time,
+    .dir-view-time h4 {
+        display: block;
+        margin: 0;
+    }
+}
